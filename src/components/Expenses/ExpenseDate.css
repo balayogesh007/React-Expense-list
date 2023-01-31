@@ -1,8 +1,20 @@
 .expense-list-calendar{
-  color: aquamarine;
+  color: rgb(255, 255, 255);
   background-color: #000000;
   border: 3px solid rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 8px;
   font-weight: 500;
+}
+
+.month-name{
+  font-size: 12px;
+}
+
+.day-name{
+  font-size: 20px;
+}
+
+.year-name{
+  font-size: 12px;
 }

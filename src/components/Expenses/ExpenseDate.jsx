@@ -6,9 +6,9 @@ export const ExpenseDate = (props) => {
   const year = props.date.getFullYear();
   return (
     <div className='expense-list-calendar'>
-      <div>{month}</div>
-      <div>{day}</div>
-      <div>{year}</div>
+      <div className='month-name'>{month}</div>
+      <div className='day-name'>{day}</div>
+      <div className='year-name'>{year}</div>
     </div>
   )
 }
