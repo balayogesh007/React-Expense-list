@@ -1,12 +1,13 @@
 import './App.css';
 import { ExpenseItems } from './components/Expenses/ExpenseItem';
+import { NewExpense } from './components/NewExpense/NewExpense';
 import { CardWrapper } from './components/UI/CardWrapper';
 
 function App() {
-  
+
   return (
     <CardWrapper className="App">
-      <h1>Expense Items</h1>
+      <NewExpense/>
       <ExpenseItems
       title = {'Breakfast'}
       amount = {'Rs.120'}
