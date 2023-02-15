@@ -17,7 +17,7 @@ export const ExpenseItems = (props) => {
                 <h4>{title}</h4>
                 <div className='expense-item-price'>{props.amount}</div>
             </div>
-            <button className='expense-item-price' onClick={editTitleHandler}>Edit Title</button>
+            <button className='edit-expense' onClick={editTitleHandler}>Edit Title</button>
         </CardWrapper>
     )
 }

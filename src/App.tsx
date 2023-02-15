@@ -7,6 +7,7 @@ function App() {
 
   return (
     <CardWrapper className="App">
+      <h2>Expense Items</h2>
       <NewExpense/>
       <ExpenseItems
       title = {'Breakfast'}

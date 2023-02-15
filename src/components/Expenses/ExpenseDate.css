@@ -9,12 +9,15 @@
 
 .month-name{
   font-size: 12px;
+  font-weight: 700;
 }
 
 .day-name{
   font-size: 20px;
+  font-weight: 700;
 }
 
 .year-name{
   font-size: 12px;
+  font-weight: 700;
 }
