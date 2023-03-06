@@ -1,0 +1,20 @@
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 170, 0);
+    padding: 1rem;
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.select-option{
+  height: 30px;
+  width: 12%;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid rgb(0, 0, 0);
+}

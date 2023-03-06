@@ -1,26 +1,19 @@
 import './App.css';
-import { ExpenseItems } from './components/Expenses/ExpenseItem';
+import { Expenses } from './components/Expenses/Expenses';
 import { NewExpense } from './components/NewExpense/NewExpense';
 import { CardWrapper } from './components/UI/CardWrapper';
 
 function App() {
-
+  const addExpenseDataHandler = (expenseItems: any) => {
+    console.log("In App.tsx");
+    console.log(expenseItems);
+    return expenseItems
+  }
   return (
     <CardWrapper className="App">
       <h2>Expense Items</h2>
-      <NewExpense/>
-      <ExpenseItems
-      title = {'Breakfast'}
-      amount = {'Rs.120'}
-      date = {new Date()}
-      >
-      </ExpenseItems>
-      <ExpenseItems
-      title = {'Lunch'}
-      amount = {'Rs.220'}
-      date = {new Date()}
-      >
-      </ExpenseItems>
+      <NewExpense onAddExpense={addExpenseDataHandler} />
+      <Expenses/>
     </CardWrapper>
   );
 }
