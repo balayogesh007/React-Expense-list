@@ -40,7 +40,7 @@ export const ExpenseForm = (props) => {
       amount: amountInput,
       date: dateInput
     }
-    console.log("Data", expenseItemData);
+    console.log("Expense Form line 43", expenseItemData);
 
     props.onSaveExpenseData(expenseItemData);
 

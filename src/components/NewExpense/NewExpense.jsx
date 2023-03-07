@@ -9,7 +9,7 @@ export const NewExpense = (props) => {
       ...usersExpenseData,
       id: Math.random().toString()
     }
-    console.log(expenseData);
+    console.log("New Expense line 12",expenseData);
     props.onAddExpense(expenseData);
   }
   return (

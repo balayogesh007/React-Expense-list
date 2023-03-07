@@ -9,7 +9,7 @@ export const ExpenseItems = (props) => {
             <ExpenseDate date = {props.date}></ExpenseDate>
             <div className='expense-item-desc'>
                 <h4>{props.title}</h4>
-                <div className='expense-item-price'>{props.amount}</div>
+                <div className='expense-item-price'>Rs. {props.amount}</div>
             </div>
             {/* <button className='edit-expense' onClick={editTitleHandler}>Edit Title</button> */}
         </CardWrapper>

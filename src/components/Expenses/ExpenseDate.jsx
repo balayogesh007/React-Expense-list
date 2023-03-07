@@ -1,9 +1,11 @@
 import './ExpenseDate.css';
+import moment  from 'moment';
 
 export const ExpenseDate = (props) => {
-  const month = props.date.toLocaleString('en-US', {month: 'long'});
-  const day = props.date.toLocaleString('en-US', {day: '2-digit'});
-  const year = props.date.getFullYear();
+  console.log("ExpenseDate line 5------", props);
+  const month = moment(props.date).format('MMMM');
+  const day = moment(props.date).format('DD')
+  const year = moment(props.date).year();
   return (
     <div className='expense-list-calendar'>
       <div className='month-name'>{month}</div>
