@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ExpensesFilter } from "./ExpenseFilter";
 import { ExpenseItems } from "./ExpenseItem";
 import moment from "moment";
+import { ChartExpenses } from "./ChartExpenses";
 
 export const Expenses = (props) => {
   const setDefaultYear = moment(new Date()).year().toString();
@@ -17,6 +18,7 @@ export const Expenses = (props) => {
   return (
     <div>
       <ExpensesFilter selected={filtered} onChangeFilter={filterChangeHandler} />
+      <ChartExpenses expenses={filterExpenses}/>
       {filterExpenses.length === 0 && <p>No records found</p>}
       {filterExpenses.length > 0 && filterExpenses.map((data) => (
         <ExpenseItems
